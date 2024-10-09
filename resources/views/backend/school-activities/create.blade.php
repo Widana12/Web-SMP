@@ -7,7 +7,7 @@
 @section('content')
     <nav class="page-breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">Kegiatan Sekolah</li>
+            <li class="breadcrumb-item">Kegiatan Kecamatan</li>
             <li class="breadcrumb-item"><a href="{{ route('dashboard.school-activity.index') }}">Data Kegiatan Sekolah</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tambah Data</li>
         </ol>
