@@ -48,6 +48,15 @@
                             </div>
                         </div>
                         <div class="row mb-3">
+                            <label for="slug" class="col-sm-2 col-form-label fw-bolder text-uppercase">Tanggal</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="created_at" name="created_at" placeholder="Y-m-d H:i:s" value="{{ old('created_at') }}">
+                                @error('slug')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
                             <label for="category_id" class="col-sm-2 col-form-label fw-bolder text-uppercase">Kategori Berita / Artikel</label>
                             <div class="col-sm-10">
                                 <select class="js-category form-select" name="category_id" id="category_id" data-width="100%">

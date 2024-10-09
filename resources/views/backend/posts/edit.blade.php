@@ -39,7 +39,7 @@
                             <div class="col-sm-10">
                                 <input type="hidden" name="created_at" value="{{ $post->created_at }}">
                                 <input type="text" class="form-control" name="created_at_text"
-                                    value="{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $post->created_at)->isoFormat('DD MMMM Y HH:mm:ss') }}" readonly>
+                                    value="{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $post->created_at)->isoFormat('DD MMMM Y HH:mm:ss') }}">
                             </div>
                         </div>
                         <div class="row mb-3">

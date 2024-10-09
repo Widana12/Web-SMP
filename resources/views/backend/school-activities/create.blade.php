@@ -8,7 +8,7 @@
     <nav class="page-breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">Kegiatan Kecamatan</li>
-            <li class="breadcrumb-item"><a href="{{ route('dashboard.school-activity.index') }}">Data Kegiatan Sekolah</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('dashboard.school-activity.index') }}">Data Kegiatan Kecamatan</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tambah Data</li>
         </ol>
     </nav>
@@ -26,9 +26,9 @@
                     <form action="{{ route('dashboard.school-activity.store') }}" method="POST" class="forms-sample" enctype="multipart/form-data">
                         @csrf
                         <div class="row mb-3">
-                            <label for="title" class="col-sm-2 col-form-label fw-bolder text-uppercase">Judul Kegiatan Sekolah</label>
+                            <label for="title" class="col-sm-2 col-form-label fw-bolder text-uppercase">Judul Kegiatan Kecamatan</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" id="title" placeholder="Judul Kegiatan Sekolah"
+                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" id="title" placeholder="Judul Kegiatan kecamatan"
                                     value="{{ old('title') }}" autofocus>
                                 @error('title')
                                     <small class="text-danger">{{ $message }}</small>
@@ -36,9 +36,9 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="slug" class="col-sm-2 col-form-label fw-bolder text-uppercase">Slug Kegiatan Sekolah</label>
+                            <label for="slug" class="col-sm-2 col-form-label fw-bolder text-uppercase">Slug Kegiatan Kecamatan</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control @error('slug') is-invalid @enderror" name="slug" id="slug" placeholder="Slug Kegiatan Sekolah" value="{{ old('slug') }}"
+                                <input type="text" class="form-control @error('slug') is-invalid @enderror" name="slug" id="slug" placeholder="Slug Kegiatan kecamatan" value="{{ old('slug') }}"
                                     readonly>
                                 @error('slug')
                                     <small class="text-danger">{{ $message }}</small>
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="sub_name" class="col-sm-2 col-form-label fw-bolder text-uppercase">Sub Judul Kegiatan Sekolah</label>
+                            <label for="sub_name" class="col-sm-2 col-form-label fw-bolder text-uppercase">Sub Judul Kegiatan Kecamatan</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control @error('sub_name') is-invalid @enderror" name="sub_name" id="sub_name" placeholder="Sub Judul Kegiatan Sekolah"
                                     value="{{ old('sub_name') }}">
